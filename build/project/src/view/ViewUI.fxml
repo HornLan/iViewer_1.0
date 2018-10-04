@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewUIController">
+   <children>
+      <StackPane alignment="BOTTOM_CENTER" prefHeight="784.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane layoutY="-16.0" onMousePressed="#Press" prefHeight="784.0" prefWidth="1000.0" style="-fx-background-color: #3c3c3c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ImageView fx:id="imageView" disable="true" fitHeight="754.0" fitWidth="566.0" pickOnBounds="true" preserveRatio="true" />
+               </center>
+               <left>
+                  <Button fx:id="previousImageBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#previousAction" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #3c3c3c;" text="&lt;" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="100.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="nextImageBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nextAction" style="-fx-background-color: #3c3c3c;" text="&gt;" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="100.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </right>
+               <top>
+                  <HBox prefHeight="20.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: #3c3c3c;" text="返回" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <ToolBar fx:id="toolbar" prefWidth="1000.0" style="-fx-background-color: #2e2d2d;">
+              <items>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="980.0" spacing="20.0" style="-fx-background-color: #2e2d2d;">
+                     <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#PPTAction" style="-fx-background-color: #2e2d2d;" text="幻灯片" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="beautyBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#beautyAction" style="-fx-background-color: #2e2d2d;" text="美化" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="rotateBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#rotateAction" style="-fx-background-color: #2e2d2d;" text="旋转" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="DaozhiBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Daozhi" style="-fx-background-color: #2e2d2d;" text="倒置" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                      <Button fx:id="enlargeBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enlargeAction" style="-fx-background-color: #2e2d2d;" text="放大" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="smallBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#smallAction" style="-fx-background-color: #2e2d2d;" text="缩小" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="resetBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#resetAction" style="-fx-background-color: #2e2d2d;" text="重置" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+              </items>
+            </ToolBar>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

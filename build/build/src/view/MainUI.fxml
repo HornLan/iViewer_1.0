@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="816.0" prefWidth="1242.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainUIController">
+   <left>
+      <HBox id="hbox" prefHeight="816.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+         <children>
+            <TreeView id="treeView" fx:id="treeview" prefHeight="816.0" prefWidth="373.0" />
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <ScrollPane id="scrollPane" prefHeight="773.0" prefWidth="889.0" BorderPane.alignment="CENTER">
+         <content>
+            <FlowPane fx:id="flowPane" prefHeight="733.0" prefWidth="884.0" />
+         </content>
+      </ScrollPane>
+   </right>
+   <top>
+      <ToolBar id="toolBar" fx:id="toolBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button id="open_btn" fx:id="openBtn" mnemonicParsing="false" onAction="#openBtnAction" text="打开" />
+            <Button id="copy_btn" fx:id="copyBtn" mnemonicParsing="false" onAction="#copyBtnAction" text="复制" />
+            <Button id="paste_btn" fx:id="pasteBtn" mnemonicParsing="false" onAction="#pasteBtnAction" text="粘贴" />
+            <Button id="delete_btn" fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnAction" text="删除" />
+            <Button fx:id="PPT" mnemonicParsing="false" onAction="#PPTAction" text="幻灯片" />
+        </items>
+      </ToolBar>
+   </top>
+   <bottom>
+      <HBox prefHeight="23.0" prefWidth="1249.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text id="text" fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="637.30029296875">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="textTwo" strokeType="OUTSIDE" strokeWidth="0.0" text="Texttwo" wrappingWidth="603.30029296875">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #2e2d2d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PPT">
+   <children>
+      <BorderPane layoutX="328.0" layoutY="281.0" onMousePressed="#Press" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fx:id="imageview" fitHeight="500.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="BOTTOM_RIGHT">
+               <children>
+                  <Button fx:id="start" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Begin" style="-fx-background-color: #2e2d2d; -fx-border-color: white;" text="开始" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+                  <Button fx:id="stop" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Stop" style="-fx-background-color: #2e2d2d; -fx-border-color: white;" text="暂停" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+               
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox prefHeight="67.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: #2e2d2d; -fx-border-color: white;" text="返回" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic></Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

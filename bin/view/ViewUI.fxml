@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="746.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewUIController">
+   <children>
+      <StackPane alignment="BOTTOM_CENTER" prefHeight="784.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane layoutY="-16.0" onMousePressed="#Press" prefHeight="775.0" prefWidth="1044.0" style="-fx-background-color: #091026;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ImageView fx:id="imageView" blendMode="ADD" disable="true" fitHeight="627.0" fitWidth="840.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center></BorderPane>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </StackPane>
+      <Pane prefHeight="746.0" prefWidth="1057.0">
+         <children>
+            <Button fx:id="backBtn" contentDisplay="CENTER" layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#Back" prefHeight="28.0" prefWidth="82.0" text="返回">
+               <opaqueInsets>
+                  <Insets top="1.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="previousImageBtn" contentDisplay="CENTER" layoutY="309.0" mnemonicParsing="false" onAction="#previousAction" prefHeight="128.0" prefWidth="104.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextImageBtn" contentDisplay="CENTER" layoutX="953.0" layoutY="309.0" mnemonicParsing="false" onAction="#nextAction" text="&gt;" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+            <ToolBar fx:id="toolbar" layoutX="-6.0" layoutY="652.0" prefHeight="94.0" prefWidth="1069.0" style="-fx-background-color: #091026;">
+              <items>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="1033.0" spacing="20.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Button fx:id="pptBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#PPTAction" text="幻灯片">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="beautyBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#beautyAction" text="美化">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="rotateBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#rotateAction" text="旋转">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="DaozhiBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Daozhi" text="倒置">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                      <Button fx:id="enlargeBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#enlargeAction" text="放大">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="smallBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#smallAction" text="缩小">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="resetBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#resetAction" text="重置">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+              </items>
+            </ToolBar>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
